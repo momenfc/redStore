@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   color: $color-grey-dark-1;
-  padding: 3rem 0;
+  padding: 3rem 0 0;
 
   position: relative;
 
@@ -126,7 +126,6 @@
 
 .menu__btn {
   background-color: transparent;
-
   cursor: pointer;
   display: none;
   padding: 1rem 0.5rem;
@@ -144,6 +143,12 @@
 
   &__icon {
     position: relative;
+    color: $color-grey-light-2;
+
+    &-active {
+      color: $color-grey-dark-2;
+    }
+
     &,
     &::after,
     &::before {
@@ -151,7 +156,7 @@
       display: inline-block;
       width: 4.25rem;
       height: 0.4rem;
-      background-color: $color-grey-light-1;
+      background-color: currentColor;
 
       @include respond($bp-small) {
         width: 3.5rem;

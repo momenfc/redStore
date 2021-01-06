@@ -269,7 +269,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #333;
-  padding: 3rem 0;
+  padding: 3rem 0 0;
   position: relative;
 }
 
@@ -441,6 +441,11 @@ body {
 
 .menu__btn__icon {
   position: relative;
+  color: #d4d4d4;
+}
+
+.menu__btn__icon-active {
+  color: #666;
 }
 
 .menu__btn__icon, .menu__btn__icon::after, .menu__btn__icon::before {
@@ -448,7 +453,7 @@ body {
   display: inline-block;
   width: 4.25rem;
   height: 0.4rem;
-  background-color: #f8f8f0;
+  background-color: currentColor;
 }
 
 @media only screen and (max-width: 31.25em) {

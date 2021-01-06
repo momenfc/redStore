@@ -1,22 +1,14 @@
-let productList = [];
-$(".add-to-cart").click(function (e) {
-  e.preventDefault();
-  const product = $(this).parents(".product-card");
-  let productVal = product.attr("data-value"),
-    productName = product.find(".product__name").text(),
-    productImage = product.find(".product__img").attr("src"),
-    productPrice = product.find(".product__price").text();
-  console.log(productVal, productName, productPrice);
-  let productObg = {
-    name: productName,
-    value: productVal,
-    price: productPrice,
-    image: productImage,
-  };
-  productList.push(productObg);
-  console.log(productList);
-  localStorage.setItem("productListSto", JSON.stringify(productList));
-});
+const menuBtn = document.querySelector(".menu__btn__icon");
+window.addEventListener("scroll", changeNavColor);
+console.log(menuBtn);
+function changeNavColor() {
+  if (window.scrollY > menuBtn.offsetHeight + 150) {
+    menuBtn.classList.add("menu__btn__icon-active");
+  } else {
+    menuBtn.classList.remove("menu__btn__icon-active");
+  }
+}
+// menu__btn__icon-active
 
 ////////////////////////////////////////////////
 // LOCAL STORAGE CONTRAL
