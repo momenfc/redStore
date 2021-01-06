@@ -1,0 +1,21 @@
+@import "abstracts/fanctions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/nav";
+@import "components/header";
+@import "components/category";
+@import "components/products";
+@import "components/exclusively";
+@import "components/testimonial";
+@import "components/brands";
+@import "components/footer";
+
+@import "pages/product-details";
+@import "pages/cart";
+@import "pages/account"; // @import "layout/";

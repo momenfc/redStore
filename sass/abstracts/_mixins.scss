@@ -1,0 +1,17 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == $bp-largest {
+    @media only screen and (max-width: $bp-largest) {
+      @content;
+    }
+  }
+  @if $breakpoint == $bp-large {
+    @media only screen and (max-width: $bp-large) {
+      @content;
+    }
+  }
+  @if $breakpoint == $bp-small {
+    @media only screen and (max-width: $bp-small) {
+      @content;
+    }
+  }
+}

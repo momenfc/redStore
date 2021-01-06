@@ -1,0 +1,157 @@
+.account {
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-gap: 4rem;
+  justify-items: center;
+
+  @include respond($bp-small) {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
+
+.account-picture {
+  img {
+    width: 100%;
+  }
+}
+
+.account-content {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 1fr repeat(2, minmax(20rem, 1fr)) 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+
+  &__input {
+    display: none;
+  }
+  &__input--login:checked ~ &__label--register::after {
+    left: -76%;
+    width: 90%;
+  }
+
+  &__input:checked + &__label {
+    color: rgba($color-grey-dark-2, 1);
+  }
+
+  &__input--login:checked ~ &__group &__login {
+    left: 0;
+  }
+  &__input--login:checked ~ &__group &__register {
+    left: 110%;
+  }
+
+  &__label {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: rgba($color-grey-dark-2, 0.8);
+    margin: 2rem;
+    cursor: pointer;
+  }
+
+  &__label--login {
+    grid-column: 2 / 3;
+    justify-self: end;
+  }
+  &__label--register {
+    grid-column: 3 / 4;
+    justify-self: start;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 125%;
+      height: 0.4rem;
+      background-color: $color-primary-light;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  &__group {
+    grid-column: 1 / -1;
+
+    width: 35rem;
+    position: relative;
+    overflow: hidden;
+    height: 30rem;
+  }
+
+  &__login {
+    position: absolute;
+    top: 2rem;
+    left: -110%;
+    height: 20rem;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+  }
+
+  &__register {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+
+    height: 20rem;
+    color: white;
+    width: 100%;
+  }
+}
+
+////////////////////////////////
+// GROUP INPUT
+.group {
+  margin: 1.5rem 0;
+  &__input {
+    font-size: 1.8rem;
+    color: $color-grey-dark-2;
+    border: 0;
+    outline: 0;
+    background-color: rgba($color-grey-light-1, 1);
+    padding: 1.5rem 1rem 1.5rem 2.5rem;
+    display: block;
+    width: 100%;
+    border-radius: 100px;
+  }
+
+  &__input::placeholder {
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    color: rgba($color-grey-dark-2, 0.6);
+  }
+
+  &__submit {
+    font-size: 2rem;
+    color: $color-grey-light-1;
+    text-transform: capitalize;
+    background-color: $color-primary-light;
+    padding: 0.8rem 0;
+    margin-top: 3rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  &__submit:hover {
+    background-color: $color-primary-dark;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: right;
+    color: rgba($color-grey-dark-2, 0.8);
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <title>RedStore</title>
+  </head>
+  <body data-page="home">
+    <div class="grid-container">
+      <header class="header">
+        <div class="header__row">
+          <!-- NAV -->
+          <nav class="nav">
+            <a href="index.html" class="nav__logo-link">
+              <img
+                src="assets/img/logo.png"
+                alt="redStore logo"
+                class="nav__logo"
+              />
+            </a>
+
+            <input type="checkbox" id="toggle" class="menu-toggle" />
+            <label for="toggle" class="menu__btn"
+              ><span class="menu__btn__icon"></span
+            ></label>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">home</a>
+              </li>
+              <li class="nav__item">
+                <a href="all-producs.html" class="nav__link">products</a>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">contact</a>
+              </li>
+              <li class="nav__item">
+                <a href="account.html" class="nav__link">account</a>
+              </li>
+            </ul>
+            <button class="nav__cart-btn">
+              <a class="nav__cart-btn__link" href="cart.html"
+                ><i class="fas fa-shopping-cart"></i
+                ><span class="navigation">4</span>
+              </a>
+            </button>
+          </nav>
+          <!-- HEADER CONTENT -->
+          <div class="header__content">
+            <div class="header__content__box-text">
+              <h1 class="heading-1">give your workout a new style</h1>
+              <p class="header__content__text">
+                Dolor sit amet consectetur adipisicing elit. Dolore, quos. Neque
+                quaerat enim exercitationem
+              </p>
+              <a href="#" class="btn-link">explore now &rarr;</a>
+            </div>
+
+            <div class="header__content__box-img">
+              <img
+                src="assets/img/image1.png"
+                alt="cover image"
+                class="header__content__img"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- category -->
+      <div class="category">
+        <div class="category__box-img">
+          <img
+            src="assets/img/category-1.jpg"
+            alt="category photo 1"
+            class="category__img"
+          />
+        </div>
+        <div class="category__box-img">
+          <img
+            src="assets/img/category-2.jpg"
+            alt="category photo 2"
+            class="category__img"
+          />
+        </div>
+        <div class="category__box-img">
+          <img
+            src="assets/img/category-3.jpg"
+            alt="category photo 3"
+            class="category__img"
+          />
+        </div>
+      </div>
+      <div class="products">
+        <!-- products__featured -->
+        <div class="products__featured mb-m">
+          <div class="products__head-box">
+            <h4 class="heading-4 heading-4__underline">featured products</h4>
+          </div>
+          <div class="products__content">
+            <!-- product 1 -->
+            <div class="product">
+              <div class="product__img-box">
+                <a href="product-details.html" class="product__link"
+                  ><img
+                    src="assets/img/product-1.jpg"
+                    alt="product photo"
+                    class="product__img"
+                /></a>
+              </div>
+              <a href="product-details.html" class="product__link"
+                ><h5 class="heading-5 product__name">red printed t-shirt</h5></a
+              >
+              <p class="product__price">$50.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <!-- product 2 -->
+            <div class="product">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-2.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">HRX sports shoes</h5>
+              <p class="product__price">$75.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+
+            <!-- product 3 -->
+            <div class="product product-card">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-3.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">HRX gray trackpants</h5>
+              <p class="product__price">$45.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+
+            <!-- product 4 -->
+            <div class="product product-card">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-4.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">blue printed t-shirt</h5>
+
+              <p class="product__price">$55.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- latest products -->
+        <div class="products__latest">
+          <div class="products__head-box">
+            <h4 class="heading-4 heading-4__underline">latest products</h4>
+          </div>
+          <div class="products__content">
+            <!-- product 5 -->
+            <div class="product product-card">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-5.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">puma gray sports shoes</h5>
+              <p class="product__price">$95.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <!-- product 6 -->
+            <div class="product">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-6.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">black printed t-shirt</h5>
+              <p class="product__price">$55.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+
+            <!-- product 7 -->
+            <div class="product">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-7.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">HRX set of 3 socks</h5>
+              <p class="product__price">$30.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+
+            <!-- product 8 -->
+            <div class="product">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-8.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">black fossil watch</h5>
+              <p class="product__price">$120.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <!-- product 9 -->
+            <div class="product">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-9.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">black sportx watch</h5>
+              <p class="product__price">$135.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <!-- product 10 -->
+            <div class="product">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-10.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">black HRX shoes</h5>
+              <p class="product__price">$55.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+
+            <!-- product 11 -->
+            <div class="product">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-11.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">gray nick shoes</h5>
+              <p class="product__price">$50.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+
+            <!-- product 12 -->
+            <div class="product">
+              <div class="product__img-box">
+                <img
+                  src="assets/img/product-12.jpg"
+                  alt="product photo"
+                  class="product__img"
+                />
+              </div>
+              <h5 class="heading-5 product__name">HRX black trackpants</h5>
+              <p class="product__price">$75.00</p>
+              <div class="product__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- exclusively -->
+      <div class="exclusively__content">
+        <h3 class="heading-3">Exclusively available on redStore</h3>
+        <h2 class="heading-2">smart band 4</h2>
+        <p class="exclusively__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam nisi
+          rem deleniti ut maxime amet, labore dolore, quo ex laboriosam nemo
+          fugiat numquam. Quasi.
+        </p>
+        <a href="#" class="btn-link">buy now &rarr;</a>
+      </div>
+      <div class="exclusively__pictur">
+        <img
+          src="assets/img/exclusive.png"
+          alt="exclusive prodauct image"
+          class="exclusively__img"
+        />
+      </div>
+
+      <!-- testimonials -->
+      <div class="testimonials">
+        <!-- testimonial 1 -->
+        <div class="testimonial">
+          <span class="testimonial__icon"
+            ><i class="fas fa-quote-left"></i
+          ></span>
+          <p class="testimonial__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            possimus ipsa maxime, magnam id exercitationem laudantium quam
+            consequuntur odio deserunt blanditiis maiores, impedit in at
+            dolorum.
+          </p>
+          <div class="testimonial__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="testimonial__box-img">
+            <img
+              src="assets/img/user-1.png"
+              alt="user photo"
+              class="testimonial__img"
+            />
+          </div>
+          <p class="testimonial__name">sean parker</p>
+        </div>
+
+        <!-- testimonial 2 -->
+        <div class="testimonial">
+          <span class="testimonial__icon"
+            ><i class="fas fa-quote-left"></i
+          ></span>
+          <p class="testimonial__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            possimus ipsa maxime, magnam id exercitationem laudantium quam
+            consequuntur odio deserunt blanditiis maiores.
+          </p>
+          <div class="testimonial__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial__box-img">
+            <img
+              src="assets/img/user-2.png"
+              alt="user photo"
+              class="testimonial__img"
+            />
+          </div>
+          <p class="testimonial__name">mike smith</p>
+        </div>
+
+        <!-- testimonial 3 -->
+        <div class="testimonial">
+          <span class="testimonial__icon"
+            ><i class="fas fa-quote-left"></i
+          ></span>
+          <p class="testimonial__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            possimus ipsa maxime, magnam id exercitationem laudantium quam
+            consequuntur odio deserunt blanditiis maiores, impedit in at dolorum
+            fugiat.
+          </p>
+          <div class="testimonial__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="testimonial__box-img">
+            <img
+              src="assets/img/user-3.png"
+              alt="user photo"
+              class="testimonial__img"
+            />
+          </div>
+          <p class="testimonial__name">mabel joe</p>
+        </div>
+      </div>
+
+      <!-- BRANDS -->
+      <div class="brands">
+        <div class="brands__box-img">
+          <img
+            src="assets/img/logo-godrej.png"
+            alt="brand photo"
+            class="brands__img"
+          />
+        </div>
+        <div class="brands__box-img">
+          <img
+            src="assets/img/logo-oppo.png"
+            alt="brand photo"
+            class="brands__img"
+          />
+        </div>
+        <div class="brands__box-img">
+          <img
+            src="assets/img/logo-coca-cola.png"
+            alt="brand photo"
+            class="brands__img"
+          />
+        </div>
+        <div class="brands__box-img">
+          <img
+            src="assets/img/logo-paypal.png"
+            alt="brand photo"
+            class="brands__img"
+          />
+        </div>
+        <div class="brands__box-img">
+          <img
+            src="assets/img/logo-philips.png"
+            alt="brand photo"
+            class="brands__img"
+          />
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="content">
+            <!-- COL 1 -->
+            <div class="content__col content__col--1">
+              <h6 class="heading-6">download our app</h6>
+              <p class="content__text">
+                download app for android and ios mobile phone
+              </p>
+              <div class="content__box-img">
+                <img
+                  src="assets/img/play-store.png"
+                  alt="google play photo"
+                  class="content__img"
+                />
+                <img
+                  src="assets/img/app-store.png"
+                  alt="app store photo"
+                  class="content__img"
+                />
+              </div>
+            </div>
+
+            <!-- COL 2 -->
+            <div class="content__col content__col--2">
+              <div class="content__box-img">
+                <img
+                  src="assets/img/logo-white.png"
+                  alt="redStore logo white"
+                  class="content__img"
+                />
+              </div>
+              <p class="content__text">
+                our purpose is to Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit.
+              </p>
+            </div>
+
+            <!-- COL 3 -->
+            <div class="content__col content__col--1">
+              <h6 class="heading-6">useful links</h6>
+              <ul class="content__list">
+                <li class="content__item">
+                  <a href="#" class="content__link">coupons</a>
+                </li>
+                <li class="content__item">
+                  <a href="#" class="content__link">blog post</a>
+                </li>
+                <li class="content__item">
+                  <a href="#" class="content__link">retum policy</a>
+                </li>
+                <li class="content__item">
+                  <a href="#" class="content__link">join affiliate</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- COL 4 -->
+            <div class="content__col content__col--1">
+              <h6 class="heading-6">follow us</h6>
+              <ul class="content__list">
+                <li class="content__item">
+                  <a href="#" class="content__link">facebook</a>
+                </li>
+                <li class="content__item">
+                  <a href="#" class="content__link">twitter</a>
+                </li>
+                <li class="content__item">
+                  <a href="#" class="content__link">instagram</a>
+                </li>
+                <li class="content__item">
+                  <a href="#" class="content__link">youtube</a>
+                </li>
+              </ul>
+            </div>
+
+            <!--  COPYRIGHT -->
+          </div>
+          <div class="copyright">&copy; copyright 2020 - by Momen Nasser</div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

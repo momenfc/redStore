@@ -1,0 +1,132 @@
+.cart {
+  margin: 8rem auto;
+
+  &__content {
+    width: 100%;
+    border-collapse: collapse;
+    color: $color-grey-dark-2;
+
+    tr {
+    }
+
+    th {
+      padding: 1rem;
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    td {
+      font-size: 1.6rem;
+
+      &:last-child {
+        text-align: right;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  &__head {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: left;
+    color: $color-grey-light-1;
+    background-color: $color-primary-light;
+  }
+
+  &__product {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+  }
+
+  &__img-box {
+    max-width: 20rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__info {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr);
+    grid-template-rows: repeat(2, min-content) 1fr;
+    grid-gap: 1rem;
+    align-items: start;
+
+    &__name {
+      @include respond($bp-small) {
+        display: none;
+      }
+    }
+  }
+
+  &__size {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: currentColor;
+  }
+
+  &__price {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: currentColor;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $color-primary;
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+    transition: all 0.2s;
+  }
+
+  &__link:hover {
+    color: $color-primary-light;
+  }
+}
+
+///////////////////////////////
+// TOTALPRICE
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+
+  table {
+    border-top: 3px solid $color-primary-light;
+    max-width: 40rem;
+    width: 100%;
+  }
+
+  td {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: $color-grey-dark-2;
+    padding: 2rem 0;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+///////////////////////////////
+// CHECKOUT
+.checkout {
+  max-width: 40rem;
+  width: 100%;
+  margin-left: auto;
+  text-align: center;
+
+  &__btn {
+    text-transform: capitalize;
+  }
+}

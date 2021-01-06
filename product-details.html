@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <title>Products Red Store</title>
+  </head>
+  <body data-page="product-details">
+    <div class="container">
+      <!-- NAV -->
+      <nav class="nav">
+        <a href="index.html" class="nav__logo-link">
+          <img
+            src="assets/img/logo.png"
+            alt="redStore logo"
+            class="nav__logo"
+          />
+        </a>
+
+        <input type="checkbox" id="toggle" class="menu-toggle" />
+        <label for="toggle" class="menu__btn"
+          ><span class="menu__btn__icon"></span
+        ></label>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">home</a>
+          </li>
+          <li class="nav__item">
+            <a href="all-producs.html" class="nav__link">products</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">contact</a>
+          </li>
+          <li class="nav__item">
+            <a href="account.html" class="nav__link">account</a>
+          </li>
+        </ul>
+        <button class="nav__cart-btn">
+          <a class="nav__cart-btn__link" href="cart.html"
+            ><i class="fas fa-shopping-cart"></i
+            ><span class="navigation">4</span>
+          </a>
+        </button>
+      </nav>
+    </div>
+
+    <!-- PRODUCT DETAILS -->
+    <div class="container mt-m">
+      <div class="product-details">
+        <!-- PUCTURS -->
+        <div class="product-details__pucturs">
+          <!-- BIG IMAGE -->
+          <div class="product-details__pucturs__big-img-box">
+            <img
+              src="assets/img/gallery-1.jpg"
+              alt="product image"
+              class="product-details__pucturs__big-img pImg"
+            />
+          </div>
+          <!-- SMALL IMAGES -->
+          <div class="product-details__pucturs__small-box">
+            <div class="product-details__pucturs__small-img-box">
+              <img
+                src="assets/img/gallery-1.jpg"
+                alt="product image"
+                class="product-details__pucturs__small-img"
+              />
+            </div>
+            <div class="product-details__pucturs__small-img-box">
+              <img
+                src="assets/img/gallery-2.jpg"
+                alt="product image"
+                class="product-details__pucturs__small-img"
+              />
+            </div>
+            <div class="product-details__pucturs__small-img-box">
+              <img
+                src="assets/img/gallery-3.jpg"
+                alt="product image"
+                class="product-details__pucturs__small-img"
+              />
+            </div>
+            <div class="product-details__pucturs__small-img-box">
+              <img
+                src="assets/img/gallery-4.jpg"
+                alt="product image"
+                class="product-details__pucturs__small-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="product-details__content">
+          <p class="product-details__content__path pId">home / t-shirt</p>
+
+          <h1 class="heading-1 pName">red printed t-shirt by HRX</h1>
+          <p class="product-details__content__price">
+            $ <span class="pPrice">50.00</span>
+          </p>
+          <div class="alert alert-select-size">Please Select Size First !</div>
+          <select class="select-list pSize">
+            <option class="select-list__item">select size</option>
+            <option class="select-list__item">x large</option>
+            <option class="select-list__item">large</option>
+            <option class="select-list__item">medium</option>
+            <option class="select-list__item">small</option>
+            <option class="select-list__item">x small</option>
+          </select>
+          <div class="product-details__content__add-to-cart-box">
+            <input type="number" value="1" class="input-number pCount" />
+            <a href="#" class="btn-link" id="addToCart">add to cart</a>
+            <div class="alert alert-added">added to cart</div>
+          </div>
+          <h4 class="heading-4 product-details__content__details-heading">
+            product details <i class="fas fa-indent icon"></i>
+          </h4>
+          <p class="product-details__content__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            eius ducimus totam, cum laboriosam maiores quae maxime saepe
+            voluptates accusamus ea dolor facere sint adipisci.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer mt-m">
+      <div class="container">
+        <div class="content">
+          <!-- COL 1 -->
+          <div class="content__col content__col--1">
+            <h6 class="heading-6">download our app</h6>
+            <p class="content__text">
+              download app for android and ios mobile phone
+            </p>
+            <div class="content__box-img">
+              <img
+                src="assets/img/play-store.png"
+                alt="google play photo"
+                class="content__img"
+              />
+              <img
+                src="assets/img/app-store.png"
+                alt="app store photo"
+                class="content__img"
+              />
+            </div>
+          </div>
+
+          <!-- COL 2 -->
+          <div class="content__col content__col--2">
+            <div class="content__box-img">
+              <img
+                src="assets/img/logo-white.png"
+                alt="redStore logo white"
+                class="content__img"
+              />
+            </div>
+            <p class="content__text">
+              our purpose is to Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit.
+            </p>
+          </div>
+
+          <!-- COL 3 -->
+          <div class="content__col content__col--1">
+            <h6 class="heading-6">useful links</h6>
+            <ul class="content__list">
+              <li class="content__item">
+                <a href="#" class="content__link">coupons</a>
+              </li>
+              <li class="content__item">
+                <a href="#" class="content__link">blog post</a>
+              </li>
+              <li class="content__item">
+                <a href="#" class="content__link">retum policy</a>
+              </li>
+              <li class="content__item">
+                <a href="#" class="content__link">join affiliate</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- COL 4 -->
+          <div class="content__col content__col--1">
+            <h6 class="heading-6">follow us</h6>
+            <ul class="content__list">
+              <li class="content__item">
+                <a href="#" class="content__link">facebook</a>
+              </li>
+              <li class="content__item">
+                <a href="#" class="content__link">twitter</a>
+              </li>
+              <li class="content__item">
+                <a href="#" class="content__link">instagram</a>
+              </li>
+              <li class="content__item">
+                <a href="#" class="content__link">youtube</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  COPYRIGHT -->
+        </div>
+        <div class="copyright">&copy; copyright 2020 - by Momen Nasser</div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
